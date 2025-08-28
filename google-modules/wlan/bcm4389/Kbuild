@@ -112,6 +112,11 @@ DHDCFLAGS += -Wall -Wstrict-prototypes -Dlinux -DLINUX -DBCMDRIVER \
 	-DDHD_USE_RANDMAC \
 	-DWL_P2P_USE_RANDMAC
 
+DHDCFLAGS += -Wstrict-prototypes \
+	-Wno-parentheses-equality \
+	-Wno-unused-but-set-variable \
+	-Wno-unused-const-variable
+
 DHDCFLAGS += -DOEM_ANDROID
 
 #################
