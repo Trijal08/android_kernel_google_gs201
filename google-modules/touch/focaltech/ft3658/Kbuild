@@ -5,6 +5,8 @@ ccflags-y += -I$(srctree)/google-modules/display/samsung/include/uapi
 ccflags-y += -I$(srctree)/google-modules/touch/common
 ccflags-y += -I$(srctree)/google-modules/touch/common/include
 
+ccflags-y += -Wno-vla
+
 obj-$(CONFIG_TOUCHSCREEN_FTS) = focal_touch.o
 focal_touch-objs += focaltech_core.o focaltech_ex_fun.o focaltech_ex_mode.o \
 	focaltech_gesture.o focaltech_esdcheck.o focaltech_point_report_check.o \
